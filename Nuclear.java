@@ -14,7 +14,7 @@ public class Nuclear {
         Scanner question3 = new Scanner(System.in);
         int c = question3.nextInt();
 
-        System.out.println("4) What is the total weight of the waste produced every 1 week?");
+        System.out.println("4) What is the total weight of the waste produced every 1 week?(tons)");
         Scanner question4 = new Scanner(System.in);
         Float d = question4.nextFloat();
 
@@ -27,8 +27,24 @@ public class Nuclear {
         Double celsius = question6.nextDouble();
         System.out.println("temperature in kelvin is "+ kelvin(celsius));
 
+        System.out.println("");
+        System.out.println("");
+        System.out.println("------------------------------JX00-XC-HB1----------------------------");
+        System.out.println("---------------------------------------------------------------------");
+        System.out.println("Total number of employees                              :" + a);
+        System.out.println("Name of the supervisor                                 :" + b);
+        System.out.println("Number of times nuclear waste was removed from core    :" + c);
+        System.out.println("Total weight of waste produced every week              :" + d+"tons");
+        System.out.println("Core average temperature                               :" + celsius+"C" + " "+ "(" +kelvin(celsius)+"K)");
+        System.out.println("Data updated successfully!!!!!!!");
+        System.out.println("");
+        System.out.println("");
+
+
     }
     static double kelvin(double celsius){
         return (double)(celsius + 273.15);
     }
+
+    
 }
